@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About.tsx";
 import Store from "./components/Store.tsx";
+import Home from "./components/Home.tsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/",
+        element: <Home />,
       },
       {
         path: "/store",
