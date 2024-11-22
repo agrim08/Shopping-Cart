@@ -2,12 +2,23 @@ import React from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useShoppingCart } from "../context/ShoppingCartContext";
+import "../App.css";
 
 const Header = () => {
   const { openCart, cartQuantity } = useShoppingCart();
   return (
-    <Navbar sticky="top" className="bg-white shadow-lg mb-3">
+    <Navbar
+      sticky="top"
+      className="bg-white shadow-lg mb-3"
+      style={{ fontSize: "1.25rem", color: "yellow" }}
+    >
       <Container>
+        <Nav className="mx-3" style={{ height: "50px", width: "50px" }}>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/000/610/262/original/vector-shopping-cart-logo-design-concept-template.jpg"
+            alt="logo"
+          />
+        </Nav>
         <Nav className="me-auto">
           <Nav className="mx-3">
             <Link to="/" className="text-decoration-none text-dark">
@@ -17,11 +28,6 @@ const Header = () => {
           <Nav className="mx-3">
             <Link to="/about" className="text-decoration-none text-dark">
               About Us
-            </Link>
-          </Nav>
-          <Nav className="mx-3">
-            <Link to="/store" className="text-decoration-none text-dark">
-              Store
             </Link>
           </Nav>
         </Nav>

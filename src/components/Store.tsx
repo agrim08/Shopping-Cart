@@ -5,8 +5,10 @@ import StoreItem from "./StoreItem";
 
 const Store = () => {
   return (
-    <>
-      <h1>Store</h1>
+    <div>
+      <div style={{ color: "black", fontSize: "2.5rem", margin: "auto 20px " }}>
+        STORE
+      </div>
       <Row md={2} xs={1} lg={3} className="gap-3 d-flex justify-content-center">
         {StoreItems.map((item) => (
           <StoreItem
@@ -18,7 +20,7 @@ const Store = () => {
           />
         ))}
       </Row>
-    </>
+    </div>
   );
 };
 
