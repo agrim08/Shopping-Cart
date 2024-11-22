@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { FormatCurrency } from "../utils/FormatCurrency";
 import { useShoppingCart } from "../context/ShoppingCartContext";

@@ -1,4 +1,3 @@
-import React from "react";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { StoreItems } from "../data/items";
 import { Button, Stack } from "react-bootstrap";

@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
 import "../App.css"; // Updated styling
 import { Link } from "react-router-dom";
