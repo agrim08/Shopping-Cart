@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About.tsx";
 import Store from "./components/Store.tsx";
 import Home from "./components/Home.tsx";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext.tsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -30,6 +31,9 @@ const appRouter = createBrowserRouter([
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={appRouter}></RouterProvider>
+    <ShoppingCartProvider>
+      <RouterProvider router={appRouter}></RouterProvider>
+    </ShoppingCartProvider>
+    ,
   </StrictMode>
 );
