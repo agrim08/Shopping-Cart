@@ -5,7 +5,7 @@ import StoreItem from "./StoreItem";
 
 const Store = () => {
   return (
-    <div>
+    <>
       <div style={{ color: "black", fontSize: "2.5rem", margin: "auto 20px " }}>
         STORE
       </div>
@@ -20,7 +20,7 @@ const Store = () => {
           />
         ))}
       </Row>
-    </div>
+    </>
   );
 };
 

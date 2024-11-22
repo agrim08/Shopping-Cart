@@ -35,7 +35,6 @@ const StoreItem = ({ id, name, price, imgUrl }: StoreItemProp) => {
         <div>
           {quantity === 0 ? (
             <Button className="w-100" onClick={() => increaseItemQuantity(id)}>
-              {" "}
               + Add to Cart
             </Button>
           ) : (
