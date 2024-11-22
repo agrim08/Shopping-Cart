@@ -10,6 +10,7 @@ const Store = () => {
       <Row md={2} xs={1} lg={3} className="gap-3 d-flex justify-content-center">
         {StoreItems.map((item) => (
           <StoreItem
+            key={item.id}
             id={item.id}
             name={item.name}
             price={item.price}
